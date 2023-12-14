@@ -135,7 +135,7 @@ If you'd like to get things running manually using Docker, you can do the follow
        telemetry_core -l 0.0.0.0:8000
    ```
 
-3. In another terminal, start up the backend shard process. We tell it where it can reach the core to send messages (possible because it has been started on the same network), and we listen on and expose port 8001 so that nodes running in the host can connect and send telemetry to it.
+3. In another terminal, start up the backend shard process. We tell it where it can reach the core to send messages (this is possible because it has been started on the same network), and we listen on and expose port 8001 so that nodes running in the host can connect and send telemetry to it.
 
    ```
    docker run --rm -it --network=telemetry \
